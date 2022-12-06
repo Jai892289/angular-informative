@@ -1,0 +1,549 @@
+<!-- <table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Email</th>
+            <th style="width: 30%">Role</th>
+            <th style="width: 10%"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.title}} {{user.firstName}} {{user.lastName}}</td>
+            <td>{{user.email}}</td>
+            <td style="white-space: nowrap">
+                <a routerLink="edit/{{user.id}}" class="btn btn-sm btn-primary mr-1">Edit</a>
+                <button (click)="deleteUser(user.id)" class="btn btn-sm btn-danger btn-delete-user"
+                    [disabled]="user.isDeleting">
+                    <span *ngIf="user.isDeleting" class="spinner-border spinner-border-sm"></span>
+                    <span *ngIf="!user.isDeleting">Delete</span>
+                </button>
+            </td>
+        </tr>
+        <tr *ngIf="!users">
+            <td colspan="4" class="text-center">
+                <span class="spinner-border spinner-border-lg align-center"></span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+ -->
+
+
+
+
+
+
+
+<section id="home" data-image-src="images/bg-home.jpg" class="section bg-home home-half">
+    <div class="bg-overlay"></div>
+    <div class="display-table">
+        <div class="display-table-cell">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 text-white text-center">
+                        <h1 class="home-title">We help  startups for their growth in business.</h1>
+                        <p class="padding-t-15 home-desc">Etiam sed.Interdum consequat proin vestibulum class at.</p>
+                        <p class="play-shadow margin-t-30 margin-l-r-auto"><a class="play-btn video-play-icon"><i
+                                    class="mdi mdi-play text-center"></i></a></p>
+                    </div>
+                    <!--container-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-pattern-effect"><img src="assets/images/bg-pattern.png" alt=""></div>
+</section>
+
+<div class="bg-pattern-effect"><img src="assets/images/bg-pattern.png" alt=""></div>
+
+
+
+
+
+<section _ngcontent-uwf-c106="" id="services" class="section pt-5">
+    <div _ngcontent-uwf-c106="" class="container">
+        <div _ngcontent-uwf-c106="" class="row">
+            <div _ngcontent-uwf-c106="" class="col-lg-8 offset-lg-2">
+                <i _ngcontent-kbp-c106="" class="pe-7s-diamond text-custom"></i>
+                <h1 _ngcontent-uwf-c106="" class="section-title text-center">Our Service</h1>
+                <div _ngcontent-uwf-c106="" class="section-title-border margin-t-20"></div>
+                <p _ngcontent-uwf-c106="" class="section-subtitle text-muted text-center padding-t-30 font-secondary">We
+                    craft digital, graphic and dimensional thinking, to create category leading brand experiences that
+                    have meaning and add a value for our clients.</p>
+            </div>
+        </div>
+        <div _ngcontent-uwf-c106="" class="row margin-t-30">
+            <div _ngcontent-uwf-c106="" class="col-lg-4 margin-t-20">
+                <div _ngcontent-uwf-c106="" class="services-box text-center hover-effect"><i _ngcontent-uwf-c106=""
+                        class="pe-7s-diamond text-custom"></i>
+                    <h4 _ngcontent-uwf-c106="" class="padding-t-15">Digital Design</h4>
+                    <p _ngcontent-uwf-c106="" class="padding-t-15 text-muted">Some quick example text to build on the
+                        card title and make up the bulk of the card's content. Moltin gives you the platform.</p>
+                </div>
+            </div>
+            <div _ngcontent-uwf-c106="" class="col-lg-4 margin-t-20">
+                <div _ngcontent-uwf-c106="" class="services-box text-center hover-effect"><i _ngcontent-uwf-c106=""
+                        class="pe-7s-display2 text-custom"></i>
+                    <h4 _ngcontent-uwf-c106="" class="padding-t-15">Unlimited Colors</h4>
+                    <p _ngcontent-uwf-c106="" class="padding-t-15 text-muted">Credibly brand standards compliant users
+                        without extensible services. Anibh euismod tincidunt ut laoreet.</p>
+                </div>
+            </div>
+            <div _ngcontent-uwf-c106="" class="col-lg-4 margin-t-20">
+                <div _ngcontent-uwf-c106="" class="services-box text-center hover-effect"><i _ngcontent-uwf-c106=""
+                        class="pe-7s-piggy text-custom"></i>
+                    <h4 _ngcontent-uwf-c106="" class="padding-t-15">Strategy Solutions</h4>
+                    <p _ngcontent-uwf-c106="" class="padding-t-15 text-muted">Separated they live in Bookmarksgrove
+                        right at the coast of the Semantics, a large language ocean necessary regelialia.</p>
+                </div>
+            </div>
+        </div>
+        <div _ngcontent-uwf-c106="" class="row margin-t-30">
+            <div _ngcontent-uwf-c106="" class="col-lg-4 margin-t-20">
+                <div _ngcontent-uwf-c106="" class="services-box text-center hover-effect"><i _ngcontent-uwf-c106=""
+                        class="pe-7s-science text-custom"></i>
+                    <h4 _ngcontent-uwf-c106="" class="padding-t-15">Awesome Support</h4>
+                    <p _ngcontent-uwf-c106="" class="padding-t-15 text-muted">It is a paradisematic country, in which
+                        roasted parts of sentences fly into your mouth leave for the far World.</p>
+                </div>
+            </div>
+            <div _ngcontent-uwf-c106="" class="col-lg-4 margin-t-20">
+                <div _ngcontent-uwf-c106="" class="services-box text-center hover-effect"><i _ngcontent-uwf-c106=""
+                        class="pe-7s-news-paper text-custom"></i>
+                    <h4 _ngcontent-uwf-c106="" class="padding-t-15">Truly Multipurpose</h4>
+                    <p _ngcontent-uwf-c106="" class="padding-t-15 text-muted">Even the all-powerful Pointing has no
+                        control about the blind texts it is an almost unorthographic.</p>
+                </div>
+            </div>
+            <div _ngcontent-uwf-c106="" class="col-lg-4 margin-t-20">
+                <div _ngcontent-uwf-c106="" class="services-box text-center hover-effect"><i _ngcontent-uwf-c106=""
+                        class="pe-7s-plane text-custom"></i>
+                    <h4 _ngcontent-uwf-c106="" class="padding-t-15">Easy to customize</h4>
+                    <p _ngcontent-uwf-c106="" class="padding-t-15 text-muted">Question Marks and devious Semikoli, but
+                        the Little Blind Text didn’t listen. She packed her seven versalia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section _ngcontent-kbp-c107="" id="features" class="section bg-light">
+    <div _ngcontent-kbp-c107="" class="container">
+        <div _ngcontent-kbp-c107="" class="row vertical-content">
+            <div _ngcontent-kbp-c107="" class="col-lg-5">
+                <div _ngcontent-kbp-c107="" class="features-box">
+                    <h3 _ngcontent-kbp-c107="">A digital web design studio creating modern &amp; engaging online
+                        experiences</h3>
+                    <p _ngcontent-kbp-c107="" class="text-muted web-desc">Separated they live in Bookmarksgrove right at
+                        the coast of the Semantics, a large language ocean. A small river named Duden flows by their
+                        place and supplies it with the necessary regelialia.</p>
+                    <ul _ngcontent-kbp-c107="" class="text-muted list-unstyled margin-t-30 features-item-list">
+                        <li _ngcontent-kbp-c107="">We put a lot of effort in design.</li>
+                        <li _ngcontent-kbp-c107="">The most important ingredient of successful website.</li>
+                        <li _ngcontent-kbp-c107="">Sed ut perspiciatis unde omnis iste natus error sit.</li>
+                        <li _ngcontent-kbp-c107="">Submit Your Orgnization.</li>
+                    </ul><a _ngcontent-kbp-c107="" href="javascript: void(0);" class="btn btn-custom margin-t-30">Learn
+                        More <i _ngcontent-kbp-c107="" class="mdi mdi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c107="" class="col-lg-7">
+                <div _ngcontent-kbp-c107="" class="features-img features-right text-right"><img _ngcontent-kbp-c107=""
+                        src="http://dorsin.angular.themesbrand.com/assets/images/online-world.svg" alt="macbook image"
+                        class="img-fluid"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section _ngcontent-kbp-c108="" id="pricing" class="section pt-5">
+    <div _ngcontent-kbp-c108="" class="container">
+        <div _ngcontent-kbp-c108="" class="row">
+            <div _ngcontent-kbp-c108="" class="col-lg-8 offset-lg-2">
+                <h1 _ngcontent-kbp-c108="" class="section-title text-center">Our Pricing</h1>
+                <div _ngcontent-kbp-c108="" class="section-title-border margin-t-20"></div>
+                <p _ngcontent-kbp-c108="" class="section-subtitle font-secondary text-muted text-center padding-t-30">
+                    Call to action pricing table is really crucial to your for your business website. Make your bids
+                    stand-out with amazing options.</p>
+            </div>
+        </div>
+        <div _ngcontent-kbp-c108="" class="row margin-t-50">
+            <div _ngcontent-kbp-c108="" class="col-lg-4">
+                <div _ngcontent-kbp-c108="" class="text-center pricing-box hover-effect">
+                    <h4 _ngcontent-kbp-c108="" class="text-uppercase">Economy</h4>
+                    <h1 _ngcontent-kbp-c108="">$9.90</h1>
+                    <h6 _ngcontent-kbp-c108="" class="text-uppercase text-muted">Billing Per Month</h6>
+                    <div _ngcontent-kbp-c108="" class="pricing-border"></div>
+                    <div _ngcontent-kbp-c108="" class="plan-features margin-t-30">
+                        <p _ngcontent-kbp-c108="">Bandwidth: <b _ngcontent-kbp-c108="" class="text-custom">1GB</b></p>
+                        <p _ngcontent-kbp-c108="">Onlinespace: <b _ngcontent-kbp-c108="" class="text-custom">50MB</b>
+                        </p>
+                        <p _ngcontent-kbp-c108="">Support: <b _ngcontent-kbp-c108="" class="text-custom">No</b></p>
+                        <p _ngcontent-kbp-c108=""><b _ngcontent-kbp-c108="" class="text-custom">1</b> Domain</p>
+                        <p _ngcontent-kbp-c108=""><b _ngcontent-kbp-c108="" class="text-custom">No</b> Hidden Fees</p>
+                    </div><a _ngcontent-kbp-c108="" href="javascript: void(0);" class="btn btn-custom margin-t-30">Join
+                        Now</a>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c108="" class="col-lg-4">
+                <div _ngcontent-kbp-c108="" class="text-center pricing-box bg-white hover-effect price-active">
+                    <h4 _ngcontent-kbp-c108="" class="text-uppercase">Deluxe</h4>
+                    <h1 _ngcontent-kbp-c108="">$19.90</h1>
+                    <h6 _ngcontent-kbp-c108="" class="text-uppercase text-muted">Billing Per Month</h6>
+                    <div _ngcontent-kbp-c108="" class="pricing-border"></div>
+                    <div _ngcontent-kbp-c108="" class="plan-features margin-t-30">
+                        <p _ngcontent-kbp-c108="">Bandwidth: <b _ngcontent-kbp-c108="" class="text-custom">10GB</b></p>
+                        <p _ngcontent-kbp-c108="">Onlinespace: <b _ngcontent-kbp-c108="" class="text-custom">500MB</b>
+                        </p>
+                        <p _ngcontent-kbp-c108="">Support: <b _ngcontent-kbp-c108="" class="text-custom">Yes</b></p>
+                        <p _ngcontent-kbp-c108=""><b _ngcontent-kbp-c108="" class="text-custom">10</b> Domain</p>
+                        <p _ngcontent-kbp-c108=""><b _ngcontent-kbp-c108="" class="text-custom">No</b> Hidden Fees</p>
+                    </div><a _ngcontent-kbp-c108="" href="javascript: void(0);" class="btn btn-custom margin-t-30">Join
+                        Now</a>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c108="" class="col-lg-4">
+                <div _ngcontent-kbp-c108="" class="text-center pricing-box hover-effect">
+                    <h4 _ngcontent-kbp-c108="" class="text-uppercase">Ultimate</h4>
+                    <h1 _ngcontent-kbp-c108="">$29.90</h1>
+                    <h6 _ngcontent-kbp-c108="" class="text-uppercase text-muted">Billing Per Month</h6>
+                    <div _ngcontent-kbp-c108="" class="pricing-border"></div>
+                    <div _ngcontent-kbp-c108="" class="plan-features margin-t-30">
+                        <p _ngcontent-kbp-c108="">Bandwidth: <b _ngcontent-kbp-c108="" class="text-custom">100GB</b></p>
+                        <p _ngcontent-kbp-c108="">Onlinespace: <b _ngcontent-kbp-c108="" class="text-custom">2 GB</b>
+                        </p>
+                        <p _ngcontent-kbp-c108="">Support: <b _ngcontent-kbp-c108="" class="text-custom">Yes</b></p>
+                        <p _ngcontent-kbp-c108=""><b _ngcontent-kbp-c108="" class="text-custom">Unlimited</b> Domain</p>
+                        <p _ngcontent-kbp-c108=""><b _ngcontent-kbp-c108="" class="text-custom">No</b> Hidden Fees</p>
+                    </div><a _ngcontent-kbp-c108="" href="javascript: void(0);" class="btn btn-custom margin-t-30">Join
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section _ngcontent-kbp-c109="" class="section bg-light">
+    <div _ngcontent-kbp-c109="" class="container">
+        <div _ngcontent-kbp-c109="" class="row">
+            <div _ngcontent-kbp-c109="" class="col-lg-8 offset-lg-2">
+                <h1 _ngcontent-kbp-c109="" class="section-title text-center">Work Process</h1>
+                <div _ngcontent-kbp-c109="" class="section-title-border margin-t-20"></div>
+                <p _ngcontent-kbp-c109="" class="section-subtitle text-muted text-center font-secondary padding-t-30">In
+                    an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web
+                    copy before the design starts.</p>
+            </div>
+        </div>
+        <div _ngcontent-kbp-c109="" class="row">
+            <div _ngcontent-kbp-c109="" class="col-lg-6 text-center process-left-icon-1"><i _ngcontent-kbp-c109=""
+                    class="pe-7s-angle-right"></i></div>
+            <div _ngcontent-kbp-c109="" class="col-lg-6 text-center process-left-icon-2"><i _ngcontent-kbp-c109=""
+                    class="pe-7s-angle-right"></i></div>
+        </div>
+        <div _ngcontent-kbp-c109="" class="row margin-t-50">
+            <div _ngcontent-kbp-c109="" class="col-lg-4 plan-line">
+                <div _ngcontent-kbp-c109="" class="text-center process-box"><i _ngcontent-kbp-c109=""
+                        class="pe-7s-pen text-custom"></i>
+                    <h4 _ngcontent-kbp-c109="" class="padding-t-15">Tell us what you need</h4>
+                    <p _ngcontent-kbp-c109="" class="text-muted">The Big Oxmox advised her not to do so.</p>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c109="" class="col-lg-4 plan-line">
+                <div _ngcontent-kbp-c109="" class="text-center process-box"><i _ngcontent-kbp-c109=""
+                        class="pe-7s-id text-custom"></i>
+                    <h4 _ngcontent-kbp-c109="" class="padding-t-15">Get free quotes</h4>
+                    <p _ngcontent-kbp-c109="" class="text-muted">Little Blind Text didn’t listen.</p>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c109="" class="col-lg-4">
+                <div _ngcontent-kbp-c109="" class="text-center process-box"><i _ngcontent-kbp-c109=""
+                        class="pe-7s-target text-custom"></i>
+                    <h4 _ngcontent-kbp-c109="" class="padding-t-15">Deliver high quality product</h4>
+                    <p _ngcontent-kbp-c109="" class="text-muted">When she reached the first hills.</p>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c109="" class="text-center mx-auto"><a _ngcontent-kbp-c109=""
+                    href="javascript: void(0);" class="btn btn-custom margin-t-50">Get Started <i _ngcontent-kbp-c109=""
+                        class="mdi mdi-arrow-right"></i></a></div>
+        </div>
+    </div>
+</section>
+
+
+
+<section _ngcontent-kbp-c109="" id="testi" class="section">
+    <div _ngcontent-kbp-c109="" class="container">
+        <div _ngcontent-kbp-c109="" class="row">
+            <div _ngcontent-kbp-c109="" class="col-lg-8 offset-lg-2">
+                <h1 _ngcontent-kbp-c109="" class="section-title text-center">What they've said</h1>
+                <div _ngcontent-kbp-c109="" class="section-title-border margin-t-20"></div>
+                <p _ngcontent-kbp-c109="" class="section-subtitle text-muted text-center font-secondary padding-t-30">
+                    The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question
+                    Marks and devious Semikoli.</p>
+            </div>
+        </div>
+        <div _ngcontent-kbp-c109="" class="row margin-t-50">
+            <div _ngcontent-kbp-c109="" class="col-lg-4">
+                <div _ngcontent-kbp-c109="" class="testimonial-box hover-effect margin-t-30"><img _ngcontent-kbp-c109=""
+                        src="http://dorsin.angular.themesbrand.com/assets/images/testimonials/user-2.jpg" alt=""
+                        class="img-fluid d-block img-thumbnail rounded-circle">
+                    <div _ngcontent-kbp-c109="" class="testimonial-decs">
+                        <p _ngcontent-kbp-c109="" class="text-muted text-center mb-0">“I feel confident imposing change
+                            on myself. It's a lot more fun progressing than looking back. That's why I need to throw
+                            curve balls.” </p>
+                    </div>
+                    <h5 _ngcontent-kbp-c109="" class="text-center text-uppercase padding-t-15">Ruben Reed - <span
+                            _ngcontent-kbp-c109="" class="text-muted text-capitalize">Charleston</span></h5>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c109="" class="col-lg-4">
+                <div _ngcontent-kbp-c109="" class="testimonial-box hover-effect margin-t-30"><img _ngcontent-kbp-c109=""
+                        src="http://dorsin.angular.themesbrand.com/assets/images/testimonials/user-2.jpg" alt=""
+                        class="img-fluid d-block img-thumbnail rounded-circle">
+                    <div _ngcontent-kbp-c109="" class="testimonial-decs">
+                        <p _ngcontent-kbp-c109="" class="text-muted text-center mb-0">“Our task must be to free
+                            ourselves by widening our circle of compassion to embrace all living creatures and the whole
+                            of nature and its beauty.” </p>
+                    </div>
+                    <h5 _ngcontent-kbp-c109="" class="text-center text-uppercase padding-t-15">Michael P. Howlett -
+                        <span _ngcontent-kbp-c109="" class="text-muted text-capitalize">Worcester</span>
+                    </h5>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c109="" class="col-lg-4">
+                <div _ngcontent-kbp-c109="" class="testimonial-box hover-effect margin-t-30"><img _ngcontent-kbp-c109=""
+                        src="http://dorsin.angular.themesbrand.com/assets/images/testimonials/user-2.jpg" alt=""
+                        class="img-fluid d-block img-thumbnail rounded-circle">
+                    <div _ngcontent-kbp-c109="" class="testimonial-decs">
+                        <p _ngcontent-kbp-c109="" class="text-muted text-center mb-0">“I've learned that people will
+                            forget what you said, people will forget what you did, but people will never forget how you
+                            made them feel.” </p>
+                    </div>
+                    <h5 _ngcontent-kbp-c109="" class="text-center text-uppercase padding-t-15">Theresa D. Sinclair -
+                        <span _ngcontent-kbp-c109="" class="text-muted text-capitalize">Lynchburg</span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section _ngcontent-kbp-c110="" id="blog" class="section bg-light pt-5">
+    <div _ngcontent-kbp-c110="" class="container">
+        <div _ngcontent-kbp-c110="" class="row">
+            <div _ngcontent-kbp-c110="" class="col-lg-8 offset-lg-2">
+                <h1 _ngcontent-kbp-c110="" class="section-title text-center">Blog</h1>
+                <div _ngcontent-kbp-c110="" class="section-title-border margin-t-20"></div>
+                <p _ngcontent-kbp-c110="" class="section-subtitle text-muted text-center font-secondary padding-t-30">
+                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean
+                    class at a euismod mus luctus quam.</p>
+            </div>
+        </div>
+        <div _ngcontent-kbp-c110="" class="row margin-t-30">
+            <div _ngcontent-kbp-c110="" class="col-lg-4">
+                <div _ngcontent-kbp-c110="" class="blog-box margin-t-30 hover-effect"><img _ngcontent-kbp-c110=""
+                        src="http://dorsin.angular.themesbrand.com/assets/images/blog/img-1.jpg" alt=""
+                        class="img-fluid">
+                    <div _ngcontent-kbp-c110="">
+                        <h5 _ngcontent-kbp-c110="" class="mt-4 text-muted">UI &amp; UX Design</h5>
+                        <h4 _ngcontent-kbp-c110="" class="mt-3"><a _ngcontent-kbp-c110="" href="" class="blog-title">
+                                Doing a cross country road trip </a></h4>
+                        <p _ngcontent-kbp-c110="" class="text-muted">She packed her seven versalia, put her initial into
+                            the belt and made herself on the way..</p>
+                        <div _ngcontent-kbp-c110="" class="mt-3"><a _ngcontent-kbp-c110="" href="" class="read-btn">Read
+                                More <i _ngcontent-kbp-c110="" class="mdi mdi-arrow-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c110="" class="col-lg-4">
+                <div _ngcontent-kbp-c110="" class="blog-box margin-t-30 hover-effect"><img _ngcontent-kbp-c110=""
+                        src="http://dorsin.angular.themesbrand.com/assets/images/blog/img-1.jpg" alt=""
+                        class="img-fluid">
+                    <div _ngcontent-kbp-c110="">
+                        <h5 _ngcontent-kbp-c110="" class="mt-4 text-muted">Digital Marketing</h5>
+                        <h4 _ngcontent-kbp-c110="" class="mt-3"><a _ngcontent-kbp-c110="" href="" class="blog-title">New
+                                exhibition at our Museum</a></h4>
+                        <p _ngcontent-kbp-c110="" class="text-muted">Pityful a rethoric question ran over her cheek,
+                            then she continued her way.</p>
+                        <div _ngcontent-kbp-c110="" class="mt-3"><a _ngcontent-kbp-c110="" href="" class="read-btn">Read
+                                More <i _ngcontent-kbp-c110="" class="mdi mdi-arrow-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c110="" class="col-lg-4">
+                <div _ngcontent-kbp-c110="" class="blog-box margin-t-30 hover-effect"><img _ngcontent-kbp-c110=""
+                        src="http://dorsin.angular.themesbrand.com/assets/images/blog/img-1.jpg" alt=""
+                        class="img-fluid">
+                    <div _ngcontent-kbp-c110="">
+                        <h5 _ngcontent-kbp-c110="" class="mt-4 text-muted">Travelling</h5>
+                        <h4 _ngcontent-kbp-c110="" class="mt-3"><a _ngcontent-kbp-c110="" href="" class="blog-title">Why
+                                are so many people..</a></h4>
+                        <p _ngcontent-kbp-c110="" class="text-muted">Far far away, behind the word mountains, far from
+                            the countries Vokalia and Consonantia.</p>
+                        <div _ngcontent-kbp-c110="" class="mt-3"><a _ngcontent-kbp-c110="" href="" class="read-btn">Read
+                                More <i _ngcontent-kbp-c110="" class="mdi mdi-arrow-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section _ngcontent-kbp-c111="" id="contact" class="section">
+    <div _ngcontent-kbp-c111="" class="container">
+        <div _ngcontent-kbp-c111="" class="row">
+            <div _ngcontent-kbp-c111="" class="col-lg-8 offset-lg-2">
+                <h1 _ngcontent-kbp-c111="" class="section-title text-center">Get In Touch</h1>
+                <div _ngcontent-kbp-c111="" class="section-title-border margin-t-20"></div>
+                <p _ngcontent-kbp-c111="" class="section-subtitle text-muted text-center font-secondary padding-t-30">We
+                    thrive when coming up with innovative ideas but also understand that a smart concept should be
+                    supported with measurable results.</p>
+            </div>
+        </div>
+        <div _ngcontent-kbp-c111="" class="row">
+            <div _ngcontent-kbp-c111="" class="col-lg-4">
+                <div _ngcontent-kbp-c111="" class="mt-4 pt-4">
+                    <p _ngcontent-kbp-c111="" class="mt-4"><span _ngcontent-kbp-c111="" class="h5">Office Address
+                            1:</span><br _ngcontent-kbp-c111=""><span _ngcontent-kbp-c111=""
+                            class="text-muted d-block mt-2">4461 Cedar Street Moro, AR 72368</span></p>
+                    <p _ngcontent-kbp-c111="" class="mt-4"><span _ngcontent-kbp-c111="" class="h5">Office Address
+                            2:</span><br _ngcontent-kbp-c111=""><span _ngcontent-kbp-c111=""
+                            class="text-muted d-block mt-2">2467 Swick Hill Street <br _ngcontent-kbp-c111="">New
+                            Orleans, LA 70171</span></p>
+                    <p _ngcontent-kbp-c111="" class="mt-4"><span _ngcontent-kbp-c111="" class="h5">Working
+                            Hours:</span><br _ngcontent-kbp-c111=""><span _ngcontent-kbp-c111=""
+                            class="text-muted d-block mt-2">9:00AM To 6:00PM</span></p>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c111="" class="col-lg-8">
+                <div _ngcontent-kbp-c111="" class="custom-form mt-4 pt-4">
+                    <div _ngcontent-kbp-c111="" id="message"></div>
+                    <form _ngcontent-kbp-c111="" method="post" action="php/contact.php" name="contact-form"
+                        id="contact-form">
+                        <div _ngcontent-kbp-c111="" class="row">
+                            <div _ngcontent-kbp-c111="" class="col-lg-6">
+                                <div _ngcontent-kbp-c111="" class="form-group mt-2"><input _ngcontent-kbp-c111=""
+                                        name="name" id="name" type="text" placeholder="Your name*" class="form-control">
+                                </div>
+                            </div>
+                            <div _ngcontent-kbp-c111="" class="col-lg-6">
+                                <div _ngcontent-kbp-c111="" class="form-group mt-2"><input _ngcontent-kbp-c111=""
+                                        name="email" id="email" type="email" placeholder="Your email*"
+                                        class="form-control"></div>
+                            </div>
+                        </div>
+                        <div _ngcontent-kbp-c111="" class="row">
+                            <div _ngcontent-kbp-c111="" class="col-lg-12">
+                                <div _ngcontent-kbp-c111="" class="form-group mt-2"><input _ngcontent-kbp-c111=""
+                                        type="text" id="subject" placeholder="Your Subject.." class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div _ngcontent-kbp-c111="" class="row">
+                            <div _ngcontent-kbp-c111="" class="col-lg-12">
+                                <div _ngcontent-kbp-c111="" class="form-group mt-2"><textarea _ngcontent-kbp-c111=""
+                                        name="comments" id="comments" rows="4" placeholder="Your message..."
+                                        class="form-control"></textarea></div>
+                            </div>
+                        </div>
+                        <div _ngcontent-kbp-c111="" class="row">
+                            <div _ngcontent-kbp-c111="" class="col-lg-12 text-right"><input _ngcontent-kbp-c111=""
+                                    type="button" id="submit" name="send" value="Send Message"
+                                    class="submitBnt btn btn-custom">
+                                <div _ngcontent-kbp-c111="" id="simple-msg"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer _ngcontent-kbp-c112="" class="footer">
+    <div _ngcontent-kbp-c112="" class="container">
+        <div _ngcontent-kbp-c112="" class="row">
+            <div _ngcontent-kbp-c112="" class="col-lg-3 margin-t-20">
+                <h4 _ngcontent-kbp-c112="">DORSIN</h4>
+                <div _ngcontent-kbp-c112="" class="text-muted margin-t-20">
+                    <ul _ngcontent-kbp-c112="" class="list-unstyled footer-list">
+                        <li _ngcontent-kbp-c112=""><a _ngcontent-kbp-c112="" href="javascript: void(0);">Home</a></li>
+                        <li _ngcontent-kbp-c112=""><a _ngcontent-kbp-c112="" href="javascript: void(0);">About us</a>
+                        </li>
+                        <li _ngcontent-kbp-c112=""><a _ngcontent-kbp-c112="" href="javascript: void(0);">Careers</a>
+                        </li>
+                        <li _ngcontent-kbp-c112=""><a _ngcontent-kbp-c112="" href="javascript: void(0);">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c112="" class="col-lg-3 margin-t-20">
+                <h4 _ngcontent-kbp-c112="">Information</h4>
+                <div _ngcontent-kbp-c112="" class="text-muted margin-t-20">
+                    <ul _ngcontent-kbp-c112="" class="list-unstyled footer-list">
+                        <li _ngcontent-kbp-c112=""><a _ngcontent-kbp-c112="" href="javascript: void(0);">Terms &amp;
+                                Condition</a></li>
+                        <li _ngcontent-kbp-c112=""><a _ngcontent-kbp-c112="" href="javascript: void(0);">About us</a>
+                        </li>
+                        <li _ngcontent-kbp-c112=""><a _ngcontent-kbp-c112="" href="javascript: void(0);">Jobs</a></li>
+                        <li _ngcontent-kbp-c112=""><a _ngcontent-kbp-c112="" href="javascript: void(0);">Bookmarks</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c112="" class="col-lg-3 margin-t-20">
+                <h4 _ngcontent-kbp-c112="">Support</h4>
+                <div _ngcontent-kbp-c112="" class="text-muted margin-t-20">
+                    <ul _ngcontent-kbp-c112="" class="list-unstyled footer-list">
+                        <li _ngcontent-kbp-c112=""><a _ngcontent-kbp-c112="" href="">FAQ</a></li>
+                        <li _ngcontent-kbp-c112=""><a _ngcontent-kbp-c112="" href="">Contact</a></li>
+                        <li _ngcontent-kbp-c112=""><a _ngcontent-kbp-c112="" href="">Disscusion</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div _ngcontent-kbp-c112="" class="col-lg-3 margin-t-20">
+                <h4 _ngcontent-kbp-c112="">Subscribe</h4>
+                <div _ngcontent-kbp-c112="" class="text-muted margin-t-20">
+                    <p _ngcontent-kbp-c112="">In an ideal world this text wouldn’t exist, a client would acknowledge the
+                        importance of having web copy before the design starts.</p>
+                </div>
+                <form _ngcontent-kbp-c112="" class="form subscribe"><input _ngcontent-kbp-c112="" placeholder="Email"
+                        required="" class="form-control"><a _ngcontent-kbp-c112="" href="javascript: void(0);"
+                        class="submit"><i _ngcontent-kbp-c112="" class="pe-7s-paper-plane"></i></a></form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<div _ngcontent-kbp-c112="" class="footer-alt">
+    <div _ngcontent-kbp-c112="" class="container">
+        <div _ngcontent-kbp-c112="" class="row">
+            <div _ngcontent-kbp-c112="" class="col-lg-12">
+                <div _ngcontent-kbp-c112="" class="float-left pull-none">
+                    <p _ngcontent-kbp-c112="" class="copy-rights text-muted">2022 © Copyright</p>
+                </div>
+                <div _ngcontent-kbp-c112="" class="float-right pull-none"><img _ngcontent-kbp-c112=""
+                        src="http://dorsin.angular.themesbrand.com/assets/images/payment.png" alt="payment-img" height="36"></div>
+                <div _ngcontent-kbp-c112="" class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
